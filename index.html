@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbershop — Barbiere classico uomo a Milano</title>
+  <meta name="description" content="Barbershop: taglio classico uomo, barba e rasatura tradizionale nel cuore di Milano. Prenota il tuo appuntamento online." />
+  <meta name="theme-color" content="#0f4c47" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="mask-icon" href="favicon.svg" color="#0f4c47" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Barbershop — Barbiere classico uomo" />
+  <meta property="og:description" content="Taglio classico, barba e rasatura tradizionale. Prenota online." />
+  <meta property="og:type" content="website" />
+
+  <!-- Preconnect ai font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Barbershop — home">
+        <span class="logo__mark">✂</span>
+        <span class="logo__text">Barber<strong>shop</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Apri il menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Menu principale">
+        <ul>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="#prenota" class="btn btn--accent btn--sm">Prenota</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Introduzione">
+      <div class="hero__media">
+        <img
+          src="img/hero.jpg"
+          alt="Interno di una barbieria classica con poltrone in pelle"
+          fetchpriority="high" />
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Dal 1998 · Milano</p>
+        <h1 class="hero__title">Barbershop</h1>
+        <p class="hero__tagline">Taglio classico, stile senza tempo.</p>
+        <div class="hero__actions">
+          <a href="#prenota" class="btn btn--accent btn--lg">Prenota ora</a>
+          <a href="#servizi" class="btn btn--ghost btn--lg">Vedi i servizi</a>
+        </div>
+      </div>
+
+      <a href="#servizi" class="hero__scroll" aria-label="Scorri ai servizi">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== SERVIZI ===================== -->
+    <section class="section" id="servizi">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">I nostri servizi</p>
+          <h2 class="section__title">Cura e precisione, al giusto prezzo</h2>
+          <p class="section__lead">Prezzi chiari, nessuna sorpresa. Scegli il servizio e prenota in pochi secondi.</p>
+        </header>
+
+        <ul class="services">
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Taglio classico</h3>
+              <span class="service__price">15€</span>
+            </div>
+            <p class="service__desc">Taglio su misura con forbici e rasoio, rifinitura collo e basette.</p>
+            <button type="button" class="service__cta" data-service="Taglio classico">Prenota</button>
+          </li>
+
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Taglio + Barba</h3>
+              <span class="service__price">25€</span>
+            </div>
+            <p class="service__desc">Il pacchetto completo: taglio capelli e modellatura barba con panno caldo.</p>
+            <button type="button" class="service__cta" data-service="Taglio + Barba">Prenota</button>
+          </li>
+
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Rasatura tradizionale</h3>
+              <span class="service__price">12€</span>
+            </div>
+            <p class="service__desc">Rasatura a mano libera con rasoio, asciugamano caldo e olio dopobarba.</p>
+            <button type="button" class="service__cta" data-service="Rasatura tradizionale">Prenota</button>
+          </li>
+
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Trattamento barba</h3>
+              <span class="service__price">10€</span>
+            </div>
+            <p class="service__desc">Rifinitura, contorno e cura della barba con prodotti dedicati.</p>
+            <button type="button" class="service__cta" data-service="Trattamento barba">Prenota</button>
+          </li>
+
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Shampoo &amp; Styling</h3>
+              <span class="service__price">8€</span>
+            </div>
+            <p class="service__desc">Lavaggio, piega e piccola messa in piega per un look pulito.</p>
+            <button type="button" class="service__cta" data-service="Shampoo & Styling">Prenota</button>
+          </li>
+
+          <li class="service reveal">
+            <div class="service__top">
+              <h3 class="service__name">Taglio bambino</h3>
+              <span class="service__price">12€</span>
+            </div>
+            <p class="service__desc">Taglio dedicato ai più piccoli (fino a 12 anni), con pazienza e cura.</p>
+            <button type="button" class="service__cta" data-service="Taglio bambino">Prenota</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERIA ===================== -->
+    <section class="section section--alt" id="galleria">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Galleria</p>
+          <h2 class="section__title">L'ambiente e il nostro lavoro</h2>
+        </header>
+
+        <div class="gallery">
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-1.jpg" alt="Barbiere mentre taglia i capelli a un cliente" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-2.jpg" alt="Rifinitura della barba con rasoio" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-3.jpg" alt="Dettaglio degli strumenti del barbiere" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-4.jpg" alt="Taglio sfumato maschile" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-5.jpg" alt="Poltrona vintage in pelle nella barbieria" />
+          </figure>
+          <figure class="gallery__item reveal">
+            <img loading="lazy" src="img/gallery-6.jpg" alt="Barbiere al lavoro nel salone" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRENOTAZIONE ===================== -->
+    <section class="section" id="prenota">
+      <div class="container">
+        <div class="booking">
+          <div class="booking__intro reveal">
+            <p class="section__eyebrow">Prenotazione</p>
+            <h2 class="section__title">Fissa il tuo appuntamento</h2>
+            <p class="section__lead">Compila il modulo: ti ricontattiamo per confermare data e ora. Campi con * obbligatori.</p>
+            <ul class="booking__perks">
+              <li>✓ Conferma rapida via telefono</li>
+              <li>✓ Disdici fino a 2 ore prima</li>
+              <li>✓ Mar–Sab, 9:00–19:00</li>
+            </ul>
+          </div>
+
+          <form class="booking__form reveal" id="booking-form" novalidate>
+            <div class="field">
+              <label for="name">Nome e cognome *</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Mario Rossi" />
+              <small class="field__error" data-error-for="name"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefono *</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+39 333 1234567" />
+              <small class="field__error" data-error-for="phone"></small>
+            </div>
+
+            <div class="field">
+              <label for="service">Servizio *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Scegli un servizio…</option>
+                <option>Taglio classico — 15€</option>
+                <option>Taglio + Barba — 25€</option>
+                <option>Rasatura tradizionale — 12€</option>
+                <option>Trattamento barba — 10€</option>
+                <option>Shampoo &amp; Styling — 8€</option>
+                <option>Taglio bambino — 12€</option>
+              </select>
+              <small class="field__error" data-error-for="service"></small>
+            </div>
+
+            <div class="field field--half">
+              <label for="date">Data *</label>
+              <input type="date" id="date" name="date" required />
+              <small class="field__error" data-error-for="date"></small>
+            </div>
+
+            <div class="field field--half">
+              <label for="time">Ora *</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Orario…</option>
+                <option>09:00</option><option>09:30</option>
+                <option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option>
+                <option>12:00</option><option>12:30</option>
+                <option>14:30</option><option>15:00</option>
+                <option>15:30</option><option>16:00</option>
+                <option>16:30</option><option>17:00</option>
+                <option>17:30</option><option>18:00</option>
+                <option>18:30</option>
+              </select>
+              <small class="field__error" data-error-for="time"></small>
+            </div>
+
+            <div class="field">
+              <label for="notes">Note <span class="field__opt">(facoltativo)</span></label>
+              <textarea id="notes" name="notes" rows="3" maxlength="300" placeholder="Es. preferenze sul taglio, primo appuntamento…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block">Invia richiesta</button>
+
+            <p class="form-success" id="form-success" role="status" hidden>
+              ✓ Richiesta inviata! Ti ricontattiamo a breve per confermare.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER / CONTATTI ===================== -->
+  <footer class="footer" id="contatti">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#top" class="logo logo--light">
+          <span class="logo__mark">✂</span>
+          <span class="logo__text">Barber<strong>shop</strong></span>
+        </a>
+        <p class="footer__about">Barbershop classico uomo nel centro di Milano. Taglio, barba e rasatura tradizionale.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="social">Instagram</a>
+          <a href="#" aria-label="Facebook" class="social">Facebook</a>
+          <a href="#" aria-label="WhatsApp" class="social">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Contatti</h3>
+        <ul class="footer__list">
+          <li><span>📍</span> Via Giuseppe Garibaldi 21, Milano</li>
+          <li><span>📞</span> <a href="tel:+390212345678">+39 02 1234 5678</a></li>
+          <li><span>✉️</span> <a href="mailto:ciao@barbershop.it">ciao@barbershop.it</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Orari</h3>
+        <ul class="footer__list footer__hours">
+          <li><span>Lun</span> <em>Chiuso</em></li>
+          <li><span>Mar – Ven</span> <em>9:00 – 19:00</em></li>
+          <li><span>Sabato</span> <em>9:00 – 19:00</em></li>
+          <li><span>Domenica</span> <em>Chiuso</em></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__map">
+        <h3 class="footer__title">Dove siamo</h3>
+        <iframe
+          title="Mappa Barbershop"
+          src="https://www.google.com/maps?q=Via+Giuseppe+Garibaldi,+Milano&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Barbershop · P.IVA 01234567890 — Progetto demo di portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

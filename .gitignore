@@ -1,0 +1,9 @@
+# Configurazione harness / editor
+.claude/
+
+# Note interne di progetto (non destinate al repo pubblico)
+CLAUDE.md
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
